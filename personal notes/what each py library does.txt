@@ -1,0 +1,93 @@
+✅ 1. pandas==2.0.3
+Purpose:
+This is your core library for reading Excel files (.xlsx), manipulating tabular data, filtering, grouping, and extracting student-specific schedules from the general timetable.
+
+Usage in your project:
+Load the Excel timetable, extract rows per student or section, and format it for image generation or display.
+
+Difficulty: 🟢 Medium
+You’ll need to understand DataFrames, indexing, filtering, and basic data manipulation – which is manageable with practice.
+
+✅ 2. openpyxl==3.1.2
+Purpose:
+This is a dependency of pandas for reading and writing .xlsx Excel files.
+
+Usage in your project:
+You don’t use it directly, but pandas.read_excel() uses it internally to load Excel timetables.
+
+Difficulty: 🟢 Easy (Handled automatically)
+You don’t need to write any openpyxl code unless you're manually editing Excel files (which is not necessary here).
+
+✅ 3. streamlit==1.25.0
+Purpose:
+Streamlit is the frontend framework for building your web app interface in Python.
+
+Usage in your project:
+Upload Excel file, select student name or ID, display image timetable, show buttons and user inputs.
+
+Difficulty: 🟢 Easy to Medium
+Streamlit is beginner-friendly. The challenge is in organizing the flow and integrating it smoothly with backend logic.
+
+✅ 4. pillow==10.0.0
+Purpose:
+Pillow (PIL) is for image creation, editing, and saving.
+
+Usage in your project:
+You’ll use it to generate the visual timetable images (text + colored cells per slot) and save or display them.
+
+Difficulty: 🟢 Medium
+Creating grid layouts and aligning text/images takes trial and error but is learnable with small experiments.
+
+✅ 5. matplotlib==3.7.2
+Purpose:
+For data visualization and plotting.
+
+Usage in your project (optional):
+If you want to plot timetable stats like number of classes/day, free slots, etc., or build charts inside your app.
+
+Difficulty: 🟡 Medium
+Plotting graphs is easy with examples, but customizing plots takes time to master.
+
+✅ 6. plotly==5.15.0
+Purpose:
+Another graphing library, used for interactive visualizations in the browser (better than matplotlib in interactivity).
+
+Usage in your project (optional):
+If you want interactive timetable stats or schedule visualizations, Plotly is helpful. For example: hovering to see course info in a visual timetable.
+
+Difficulty: 🟡 Medium to Hard
+Requires a learning curve for customization. But not required unless you're aiming for advanced interactive charts.
+
+🔎 Summary Table
+Library	Required	Purpose	Difficulty
+pandas	✅ Yes	Data loading + filtering	Medium
+openpyxl	✅ Yes	Backend engine for Excel reading	Easy
+streamlit	✅ Yes	Web app interface	Easy–Medium
+pillow	✅ Yes	Generate timetable images	Medium
+matplotlib	❌ Optional	For basic visual plots/statistics	Medium
+plotly	❌ Optional	For interactive visualizations	Medium–Hard
+
+✅ Recommendations
+Start with only these 4: pandas, openpyxl, streamlit, pillow.
+
+Skip matplotlib and plotly unless you want to add graphs or analytics later.
+
+Add them modularly when your core timetable generation is complete.
+
+Would you like help with how these work together in your project flow?
+
+
+
+
+
+
+
+
+
+Ask ChatGPT
+
+
+
+
+
+ChatGPT can 
